@@ -12,8 +12,8 @@ import warnings
 import pymysql
 import json
 from datetime import datetime
-import turbulence_analysis, yearmaxwind_analysis_v1, insert_dynamic_information, weibull_analysis, daily_analysis, \
-	frequency_analysis, shear_analysis
+from function import turbulence_analysis, yearmaxwind_analysis_v1, insert_dynamic_information, weibull_analysis, \
+	daily_analysis, frequency_analysis, shear_analysis
 from report import turbulenceData
 
 warnings.filterwarnings('ignore')

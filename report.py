@@ -8,7 +8,7 @@ import pandas as pd
 import warnings
 import pymysql
 import json
-import turbulence_analysis,yearmaxwind_analysis_v1,insert_dynamic_information,weibull_analysis
+from function import turbulence_analysis,yearmaxwind_analysis_v1,insert_dynamic_information,weibull_analysis
 
 warnings.filterwarnings('ignore')
 host = 'localhost'

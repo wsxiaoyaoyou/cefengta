@@ -7,10 +7,10 @@ from flask import Flask, g, jsonify, redirect, url_for, make_response, render_te
 from flask import request, jsonify, Response, stream_with_context
 from flask import send_file, session, render_template, redirect
 import sql_service
-import write_yuanshi_data,read_channel_from_file,download_analysis,delete_turbine,scatter_analysis
-import yearmaxwind_analysis_v1,yearmaxwind_analysis_v2,shear_analysis,daily_analysis,generation_analysis
-import read_timeseries,data_imputation,data_clean_rule,download_from_email,clean_imputation_data
-import frequency_analysis,rose_analysis,turbulence_analysis,weibull_analysis
+from function import write_yuanshi_data,read_channel_from_file,download_analysis,delete_turbine,scatter_analysis
+from function import yearmaxwind_analysis_v1,yearmaxwind_analysis_v2,shear_analysis,daily_analysis,generation_analysis
+from function import read_timeseries,data_imputation,data_clean_rule,download_from_email,clean_imputation_data
+from function import frequency_analysis,rose_analysis,turbulence_analysis,weibull_analysis
 from flask_cors import CORS
 import subprocess
 import json

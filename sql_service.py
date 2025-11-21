@@ -541,7 +541,7 @@ def showMastPage(data):
     if len(values) > 0:
         result = pd.DataFrame(values)
         result.columns = col_name_list
-        result.drop(['RES'], axis=1, inplace=True)
+        # result.drop(['RES'], axis=1, inplace=True)
         result['STATUS'] = result['STATUS'].replace({'1': '正常', '2': '正在添加'})
         pageIndex = data['pageIndex']
         pageSize = data['pageSize']
@@ -1368,7 +1368,8 @@ def showMastPageTrue(data):
     if len(values) > 0:
         result = pd.DataFrame(values)
         result.columns = col_name_list
-        result.drop(['organize_uuid', 'TEMPLET_ID', 'warnTempID', 'UPLOAD_STATUS', 'RES'], axis=1, inplace=True)
+        # result.drop(['organize_uuid', 'TEMPLET_ID', 'warnTempID', 'UPLOAD_STATUS', 'RES'], axis=1, inplace=True)
+        result.drop(['organize_uuid', 'TEMPLET_ID', 'warnTempID', 'UPLOAD_STATUS'], axis=1, inplace=True)
         result['STATUS'] = result['STATUS'].replace({'1': '正常', '2': '正在添加'})
         pageIndex = data['pageIndex']
         pageSize = data['pageSize']
